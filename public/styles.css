@@ -1,0 +1,128 @@
+body {
+    background-color: #050505;
+    color: #FFFFFF;
+    font-family: "Comfortaa", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: 300;
+    margin: 0 0 15px 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content {
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#output-text,
+#output-info {
+    white-space: pre-wrap;
+    text-align: center;
+    margin: 20px auto;
+    font-family: monospace;
+    background-color: #050505;
+    padding: 15px;
+    line-height: 1.5;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    visibility: hidden;
+    width: 100%;
+    max-width: 600px;
+}
+
+form {
+    font-family: sans-serif;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #868686;
+    border-radius: 15px;
+}
+
+input, #queue-input {
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #050505;
+    color: #ccc;
+    transition: 0.3s;
+    
+}
+
+#queue-input {
+    margin: 20px;
+}
+
+input:focus, #queue-input:focus {
+    outline: none;
+    border-color: #ff9900;
+    scale: 1.01;
+}
+
+input:hover, #queue-input:hover {
+    scale: 1.01;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.row input {
+    flex: 1;
+}
+
+button {
+    color: #FFFFFF;
+    background-color: #050505;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff9900;
+    border-color: #ff9900;
+    scale: 1.05;
+}
+
+#queue-input {
+    font-size: 18px;
+    text-align: center;
+    max-width: 392px;
+}
+
+#queue-input option {
+    background-color: #050505;
+    color: #ccc;
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+    form, #queue-input, #output-text, #output-info {
+        max-width: 100%;
+    }
+}
